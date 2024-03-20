@@ -43,6 +43,7 @@ exports.addRow = async function (req, res, next) {
     username: req.body.username,
     language: req.body.language,
     code: req.body.code,
+    stdin:req.body.stdin
   };
 
   connection.query("INSERT INTO codes SET ?", newRow, (err, results) => {
@@ -69,6 +70,10 @@ exports.retrieveRows = function (req, res, next) {
     // res.status(200).json({
     //     stdout: base64.decode(response1.data.stdout),
     //   });
+
+    res.status(200).json({
+      "data":results
+    })
   });
 //   next();
 };

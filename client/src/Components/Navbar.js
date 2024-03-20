@@ -24,7 +24,7 @@ const Navbar = ({
     { value: "light", label: "Light" },
   ];
   return (
-    <div className="navbar">
+    <div className="navbar" style={{ paddingBottom: "10px" }}>
       <h1>Compiler</h1>
       <Select
         options={languages}
@@ -38,12 +38,15 @@ const Navbar = ({
         onChange={(e) => setUserTheme(e.value)}
         placeholder={userTheme}
       />
-      <label>Font Size</label>
-      <input
-        value={Username}
-        onChange={(e) => setUsername(e.target.value)}
-      ></input>
-      <input
+      <div>
+        <label>User name:</label>
+        <input
+          placeholder="Username"
+          value={Username}
+          onChange={(e) => setUsername(e.target.value)}
+        ></input>
+      </div>
+      {/* <input
         type="range"
         min="18"
         max="30"
@@ -52,15 +55,17 @@ const Navbar = ({
         onChange={(e) => {
           setFontSize(e.target.value);
         }}
-      />
+      /> */}
       <button
         onClick={() => {
           SubmitAction();
         }}
-        className="btn btnPrimary"
+        className={`btn`}
+        style={{ backgroundColor: "#1c7ed6" }}
       >
         Save
       </button>
+      <a href="/activity">activity</a>
     </div>
   );
 };

@@ -77,7 +77,7 @@
 }
 
 h4 {
-  color: #afec3f;
+  color: #228be6;
 }
 
 #code-inp {
@@ -102,7 +102,7 @@ h4 {
   height: 40px;
   font-size: 22px;
   font-weight: bold;
-  background-color: #afec3f;
+  background-color: #228be6;
   border: none;
   border-radius: 4px;
   transition: 0.3s;
