@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 export default  function MyTabel() {
   const [submissions, setSubmissions] = useState({});
    useEffect(function () {
-    fetch("http://localhost:8000/database/retrive")
+    fetch("https://compiler.onrender.com/database/retrive")
       .then((resp) => resp.json())
       .then((data) => {
         const results = data.data;

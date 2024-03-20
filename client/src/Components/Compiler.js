@@ -36,7 +36,7 @@ function Compiler() {
       code: userCode,
       stdin: userInput,
     };
-    const response = fetch("http://localhost:8000/database/save", {
+    const response = fetch("https://compiler.onrender.com/database/save", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
