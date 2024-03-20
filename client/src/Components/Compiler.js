@@ -36,7 +36,7 @@ function Compiler() {
       code: userCode,
       stdin: userInput,
     };
-    const response = fetch("https://online-code-editor-3.onrender.com/database/save", {
+    fetch("https://online-code-editor-3.onrender.com/database/save", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
