@@ -34,3 +34,17 @@
   background-color: #474747 !important;
   border-color: #228be6 !important;
 }
+
+a {
+  font-weight: bold;
+  text-decoration: none; /* Removes underline by default */
+  color: #333; /* Default color */
+  background-color: #ffc107; /* Highlight color */
+  padding: 5px 10px; /* Adjust padding as needed */
+  border-radius: 5px; /* Rounded corners */
+}
+
+a:hover {
+  background-color: #ff9800; /* Highlight color on hover */
+  color: #fff; /* Text color on hover */
+}

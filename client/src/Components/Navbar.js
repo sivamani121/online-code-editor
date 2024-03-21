@@ -65,7 +65,7 @@ const Navbar = ({
       >
         Save
       </button>
-      <a href="/activity">activity</a>
+      <a href="/activity" className="link" style={{fontStyle:Blob}}> activity</a>
     </div>
   );
 };
